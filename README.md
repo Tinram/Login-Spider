@@ -1,19 +1,30 @@
 
 # Login Spider
 
-#### Spider pages the other side of a website log-in.
+#### Spider website pages protected by a log-in.
 
 
 ## Purpose
 
-Log-in to a website using *pycurl* to access the pages of a registered user, then harvest the page links and process the pages.
+Log-in to a website to access the area of a registered user, then harvest the page links and process the pages.
+
+
+## Requirements
+
++ Python 2.6+
++ pycurl
+
+
+## Background
+
+Having to use Windows on-site, Python dependencies were somewhat restricted to build a spider (`pip` would only install some, *Beautiful Soup* was not one of them).
 
 
 ## Usage
 
-Configure the website access details in the *## CONFIG ##* section of *login_spider.py*.
+Configure the website access details in the *CONFIG* section of *login_spider.py*.
 
-(Viewing the website log-in form's HTML source will be needed to configure *FORM_POST*)
+(Viewing the website log-in form's HTML source will be needed to configure the *FORM_POST* parameter.)
 
 Execute:
 
@@ -22,7 +33,7 @@ Execute:
 
 ## Speed
 
-Dependent on CPU and OS, approximately 35 seconds to process a 200 page website.
+Dependent on CPU and OS, approximately 35 seconds to process a 200 page website on a localhost server.
 
 
 ## Credits

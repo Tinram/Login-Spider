@@ -1,12 +1,12 @@
 
 # Login Spider
 
-#### Spider website pages protected by a log-in.
+#### Spider website pages protected by a login.
 
 
 ## Purpose
 
-Log-in to a website to access the area of a registered user, then harvest the page links and process the pages.
+Log-in to a website to access the area of a registered user, then spider the page links and process the page content.
 
 
 ## Requirements
@@ -24,7 +24,7 @@ Having to use Windows on-site, Python dependencies were somewhat restricted to b
 
 Configure the website access details in the *CONFIG* section of *login_spider.py*.
 
-(Viewing the website log-in form's HTML source will be needed to configure the *FORM_POST* parameter.)
+(Viewing the website login form's HTML source will be needed to configure the *FORM_POST* string, as each site will use something different.)
 
 Execute:
 
@@ -33,7 +33,7 @@ Execute:
 
 ## Speed
 
-Dependent on CPU and OS, approximately 35 seconds to process a 200 page website on a localhost server.
+Dependent on CPU and OS, approximately 35 seconds to process a 200 page website with a localhost connection (zero network overhead).
 
 
 ## Credits

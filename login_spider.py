@@ -37,7 +37,7 @@ class LoginSpider(object):
         Usage              python login_spider.py
 
         Python Version     2.7
-        Author             Martin Latter <copysense.co.uk>
+        Author             Martin Latter
         Copyright          Martin Latter 04/12/2017
         Version            0.06
         Credits            jfs and philshem (pool threading)
@@ -63,7 +63,7 @@ class LoginSpider(object):
         """
             Attempt to log-in through website form and return page content.
             Args:
-                url: log-in page.
+                url: log-in page
         """
 
         buf = StringIO()
@@ -167,7 +167,7 @@ class LoginSpider(object):
     def search_page(self, lnk):
 
         """
-            Search page content for the string specified in NEEDLE
+            Search page content for the string specified in NEEDLE.
             Args:
                 lnk: link
         """
@@ -205,8 +205,8 @@ class LinkParser(HTMLParser):
         """
             Process HTML tag.
             Args:
-                tag: tag.
-                attrs: tag's attributes.
+                tag: tag
+                attrs: tag's attributes
         """
 
         if tag == 'a':
